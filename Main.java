@@ -1,5 +1,5 @@
 //Name: Tanmay Joshi
-//PRN: 23070126057
+//PRN: 23070126134
 //Batch: AIML B3
 
 // Main.java
@@ -32,6 +32,19 @@ class Main{
             case 4 -> {
                 int[] numbers = userInput.getTwoNumbers();
                 System.out.println("Quotient: " + calculator.divide(numbers));
+            }
+	    case 5 -> {
+                System.out.println("Enter a number for Fibonacci sequence:");
+                int NUM = scanner.nextInt();
+                System.out.println("Fibonacci of " + NUM + ": " + calculator.fibonacci(NUM));
+            }
+            case 6 -> {
+                int[] array = userInput.getArray();
+                System.out.println("Sum of Array: " + calculator.sumArray(array));
+            }
+            case 7 -> {
+                int[] array = userInput.getArray();
+                System.out.println("Mean of Array: " + calculator.meanArray(array));
             }
             default -> System.out.println("Invalid choice.");
         }
